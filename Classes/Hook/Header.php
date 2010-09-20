@@ -54,8 +54,6 @@ class Tx_Opengraph_Hook_Header {
       array_push($params['headerData'], $this->buildTag('og','type', strip_tags(trim($GLOBALS['TSFE']->page['tx_opengraph_type']))));
       if(!empty($GLOBALS['TSFE']->page['tx_opengraph_image'])) array_push($params['headerData'], $this->buildTag('og','image', strip_tags(trim($GLOBALS['TSFE']->page['tx_opengraph_image']))));
       
-      print_r($params['headerData']);
-      
       // add additional tags
       if(!empty($GLOBALS['TSFE']->page['tx_opengraph_additional'])){
         $additional = explode("\n",$GLOBALS['TSFE']->page['tx_opengraph_additional']);
