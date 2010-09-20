@@ -1,5 +1,5 @@
 #
-# Create the needed extra column
+# Create the needed extra columns
 #
 CREATE TABLE pages (
   tx_opengraph_active tinyint(1) DEFAULT '0' NOT NULL
