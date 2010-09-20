@@ -43,16 +43,17 @@ class Tx_Opengraph_Hook_Header {
    * @return void
    */
   function headerData($params, $pObj) {
-    
+      
     // check before using opengraph
     if(TYPO3_MODE == 'FE' && $GLOBALS['TSFE']->page['tx_opengraph_active'] == '1') {
       
       // add default tags
       array_push($params['headerData'], $this->buildTag('og','site_name', strip_tags(trim($GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename']))));
       array_push($params['headerData'], $this->buildTag('og','title', strip_tags(trim($GLOBALS['TSFE']->page['title']))));
+      array_push($params['headerData'], $this->buildTag('og','url', strip_tags(trim($this->buildTypolink()))));
       if(!empty($GLOBALS['TSFE']->page['description'])) array_push($params['headerData'], $this->buildTag('og','description', strip_tags(trim($GLOBALS['TSFE']->page['description']))));
       array_push($params['headerData'], $this->buildTag('og','type', strip_tags(trim($GLOBALS['TSFE']->page['tx_opengraph_type']))));
-      if(!empty($GLOBALS['TSFE']->page['tx_opengraph_image'])) array_push($params['headerData'], $this->buildTag('og','image', strip_tags(trim($GLOBALS['TSFE']->page['tx_opengraph_image']))));
+      if(!empty($GLOBALS['TSFE']->page['tx_opengraph_image'])) array_push($params['headerData'], $this->buildTag('og','image', strip_tags(trim($GLOBALS['TSFE']->config['config']['baseURL'] . $GLOBALS['TSFE']->page['tx_opengraph_image']))));
       
       // add additional tags
       if(!empty($GLOBALS['TSFE']->page['tx_opengraph_additional'])){
@@ -86,6 +87,16 @@ class Tx_Opengraph_Hook_Header {
    */
    protected function buildTag($space,$name,$content){
      return '<meta property="'.strip_tags(trim($space)).':'.strip_tags(trim($name)).'" content="'.strip_tags(trim($content)).'"/>';
+   }
+   
+   /**
+   * Builds and returns a typolink
+   * 
+   * @return string
+   */
+   protected function buildTypolink(){
+     $local_cObj = t3lib_div::makeInstance('tslib_cObj');
+     return $GLOBALS['TSFE']->config['config']['baseURL'] . $local_cObj->getTypoLink_URL($GLOBALS['TSFE']->id);
    }
   
 }
