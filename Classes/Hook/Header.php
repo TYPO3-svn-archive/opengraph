@@ -68,10 +68,7 @@ class Tx_Opengraph_Hook_Header {
             $name = $subParts[1];
             // replacement (not included up to now)
             if($space == 'og' && ($name == 'site_name' || $name == 'title' || $name == 'description' || $name == 'type' || $name == 'image')){
-              $size = count($params['headerData']);
-              for($i=0,$i<=($size-1),$i++){
-                // replace the already included header data (possible solution)
-              }
+              // replace the already included header data
             }
             array_push($params['headerData'], $this->buildTag($space,$name,$content));
           }
