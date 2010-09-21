@@ -1,9 +1,6 @@
 <?php
 if (!defined ('TYPO3_MODE')) die ('Access denied.');
 
-// default typoscript
-t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Facebook Open Graph protocoll');
-
 // extension name
 $extensionName = t3lib_div::underscoredToUpperCamelCase($_EXTKEY);
 $pluginSignature = strtolower($extensionName) . '_pi1';
