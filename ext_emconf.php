@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "opengraph".
 #
-# Auto generated 21-09-2010 13:33
+# Auto generated 21-09-2010 15:03
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -40,7 +40,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:7:{s:16:"ext_autoload.php";s:4:"de69";s:12:"ext_icon.gif";s:4:"f076";s:17:"ext_localconf.php";s:4:"35d4";s:14:"ext_tables.php";s:4:"0261";s:14:"ext_tables.sql";s:4:"ed9f";s:23:"Classes/Hook/Header.php";s:4:"d457";s:43:"Legacy/class.tx_opengraph_getHeaderHook.php";s:4:"235e";}',
+	'_md5_values_when_last_written' => 'a:7:{s:16:"ext_autoload.php";s:4:"de69";s:12:"ext_icon.gif";s:4:"f076";s:17:"ext_localconf.php";s:4:"35d4";s:14:"ext_tables.php";s:4:"11aa";s:14:"ext_tables.sql";s:4:"ed9f";s:23:"Classes/Hook/Header.php";s:4:"d457";s:43:"Legacy/class.tx_opengraph_getHeaderHook.php";s:4:"235e";}',
 	'suggests' => array(
 	),
 );

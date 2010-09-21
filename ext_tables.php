@@ -107,6 +107,6 @@ $TCA['pages']['ctrl']['requestUpdate'] .= ',tx_opengraph_active';
 // add tca to page config
 t3lib_div::loadTCA('pages');
 t3lib_extMgm::addTCAcolumns('pages', '$tempColumns', 1);
-t3lib_extMgm::addToAllTCAtypes('pages','tx_opengraph_active;;;;1-1-1,tx_opengraph_type;;;;1-1-1,tx_opengraph_image;;;;1-1-1,tx_opengraph_additional;;;;1-1-1');
+t3lib_extMgm::addToAllTCAtypes('pages','tx_opengraph_active;;;;1-1-1,tx_opengraph_type;;;;1-1-1,tx_opengraph_image;;;;1-1-1,tx_opengraph_additional;;;;1-1-1','','after:description');
 
 ?>
