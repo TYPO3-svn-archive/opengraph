@@ -1,3 +1,0 @@
-config {
-  htmlTag_setParams := appendString( xmlns:og="http://opengraphprotocol.org/schema/" )
-}
