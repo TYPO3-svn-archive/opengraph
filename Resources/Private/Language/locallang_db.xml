@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'opengraph'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_opengraph_activate">Use this page as Open Graph Object:</label>
+			<label index="tx_opengraph_type">Type of content:</label>
+			<label index="tx_opengraph_image">Image:</label>
+			<label index="tx_opengraph_additional">Additional information:</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+      <label index="tx_opengraph_activate">Diese Seite als Open Graph Objekt nutzen:</label>
+      <label index="tx_opengraph_type">Inhaltstyp:</label>
+      <label index="tx_opengraph_image">Bild:</label>
+      <label index="tx_opengraph_additional">Zusätzliche Informationen:</label>
+    </languageKey>
+	</data>
+</T3locallang>

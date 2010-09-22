@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>CSH</type>
+		<description>Language labels for the Opengraph context sensitive help (CSH)</description>
+		<csh_table>pages</csh_table>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+		  <label index="tx_opengraph_active.alttitle">Open Graph Object</label>
+		  <label index="tx_opengraph_active.description">Activate page as Open Graph Object</label>
+		  <label index="tx_opengraph_active.details">Please just edit the new fields at the beginning. After Publishing the page into a Graph, later changes can have negative impacts.</label>  
+		  <label index="tx_opengraph_type.alttitle">Type</label>
+      <label index="tx_opengraph_type.description">The page type</label>
+      <label index="tx_opengraph_type.details">In order for your object to be represented within the graph, you need to specify its type.</label>
+      <label index="tx_opengraph_image.alttitle">Image</label>
+      <label index="tx_opengraph_image.description">An image which should represent your object within the graph.</label>
+      <label index="tx_opengraph_image.details">The best way is to upload the image and never change it again.</label>
+      <label index="tx_opengraph_additional.alttitle">Additional Informations</label>
+      <label index="tx_opengraph_additional.description">Every line one Tag!</label>
+      <label index="tx_opengraph_additional.details">Example (og:country-name=germany or/and fb:admins=USER_ID1,USER_ID2...). Please check the documentation for more information.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+      <label index="tx_opengraph_active.alttitle">Open Graph Objekt</label>
+      <label index="tx_opengraph_active.description">Seite als Open Graph Objekt aktivieren</label>
+      <label index="tx_opengraph_active.details">Alle folgenden Felder am besten nur bei Erstellung der Seite editieren. Späteres editieren kann unter Umständen folgen im Graphen bewirken.</label> 
+      <label index="tx_opengraph_type.alttitle">Type</label>
+      <label index="tx_opengraph_type.description">Der Seiten Type</label>
+      <label index="tx_opengraph_type.details">Damit das Objekt korrekt in einen Graphen eingebunden werden kann, muss ein Seiten Type angegeben werden.</label>
+      <label index="tx_opengraph_image.alttitle">Bild</label>
+      <label index="tx_opengraph_image.description">Ein Bild welches das Objekt im Graphen repräsentiert.</label>
+      <label index="tx_opengraph_image.details">Das Bild Hochladen und einbinden. Ein späteres Ändern vermeiden.</label>
+      <label index="tx_opengraph_additional.alttitle">Zusätzliche Informationen</label>
+      <label index="tx_opengraph_additional.description">Jede Zeile ein Tag!</label>
+      <label index="tx_opengraph_additional.details">Beispiel (og:country-name=germany oder/und fb:admins=USER_ID1,USER_ID2...). Weitere Informationen in der Dokumentation.</label>
+    </languageKey>
+	</data>
+</T3locallang>
