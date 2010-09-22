@@ -9,7 +9,7 @@ $pluginSignature = strtolower($extensionName) . '_pi1';
 $TCA['pages']['columns'] += array(
   'tx_opengraph_active' => array(
     'exclude' => 1,
-    'label'   => 'Use this page as Open Graph Object:',
+    'label'   => 'LLL:EXT:opengraph/Resources/Private/Language/locallang_db.xml:tx_opengraph_activate',
     'config'  => array(
       'type' => 'check',
       'items' => array(
@@ -19,7 +19,7 @@ $TCA['pages']['columns'] += array(
   ),
   'tx_opengraph_type' => array(
     'exclude' => 1,
-    'label'   => 'Type of content:',
+    'label'   => 'LLL:EXT:opengraph/Resources/Private/Language/locallang_db.xml:tx_opengraph_type',
     'displayCond' => 'FIELD:tx_opengraph_active:REQ:true',
     'config'  => array(
       'type' => 'select',
@@ -75,7 +75,7 @@ $TCA['pages']['columns'] += array(
   ),
   'tx_opengraph_image' => array(
     'exclude' => 1,
-    'label'   => 'Image:',
+    'label'   => 'LLL:EXT:opengraph/Resources/Private/Language/locallang_db.xml:tx_opengraph_image',
     'displayCond' => 'FIELD:tx_opengraph_active:REQ:true',
     'config' => array (
       'type' => 'group',
@@ -90,7 +90,7 @@ $TCA['pages']['columns'] += array(
   ),
   'tx_opengraph_additional' => array(
     'exclude' => 1,
-    'label'   => 'Additional information:',
+    'label'   => 'LLL:EXT:opengraph/Resources/Private/Language/locallang_db.xml:tx_opengraph_additional',
     'displayCond' => 'FIELD:tx_opengraph_active:REQ:true',
     'config'  => array(
       "type" => "text",
@@ -103,6 +103,9 @@ $TCA['pages']['columns'] += array(
 
 // page config reload
 $TCA['pages']['ctrl']['requestUpdate'] .= ',tx_opengraph_active';
+
+// add labels for context sensitive help
+t3lib_extMgm::addLLrefForTCAdescr('pages', 'EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_csh.xml');
 
 // add tca to page config
 t3lib_div::loadTCA('pages');
